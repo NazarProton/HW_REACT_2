@@ -22,14 +22,16 @@ const Counter = () => {
   //   return tags.map((tag) => <li key={tag}>{tag}</li>);
   // };
   const handleIncrement = (productId) => {
+    console.log(`Нажат '+' для product -`);
     console.log(productId);
     setCount(count + 1);
   };
   const handleDecrement = (productId) => {
-    console.log(productId);
     if (count === 0) {
       return count;
     } else {
+      console.log(`Нажат '-' для product -`);
+      console.log(productId);
       setCount(count - 1);
     }
   };
